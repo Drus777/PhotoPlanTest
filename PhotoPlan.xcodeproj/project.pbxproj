@@ -3,17 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		789175C9274FF34900E86E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175C8274FF34900E86E26 /* AppDelegate.swift */; };
 		789175CB274FF34900E86E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175CA274FF34900E86E26 /* SceneDelegate.swift */; };
-		789175CD274FF34900E86E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175CC274FF34900E86E26 /* ViewController.swift */; };
+		789175CD274FF34900E86E26 /* LocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175CC274FF34900E86E26 /* LocationsVC.swift */; };
 		789175D0274FF34900E86E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789175CE274FF34900E86E26 /* Main.storyboard */; };
 		789175D2274FF35100E86E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789175D1274FF35100E86E26 /* Assets.xcassets */; };
 		789175D5274FF35100E86E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789175D3274FF35100E86E26 /* LaunchScreen.storyboard */; };
 		789175DD274FF52500E86E26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789175DC274FF52500E86E26 /* GoogleService-Info.plist */; };
+		789175E52750030700E86E26 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175E32750030700E86E26 /* LocationsTableViewCell.swift */; };
+		789175E62750030700E86E26 /* LocationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789175E42750030700E86E26 /* LocationsTableViewCell.xib */; };
+		789175EC27500ABD00E86E26 /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175EA27500ABD00E86E26 /* LocationCollectionViewCell.swift */; };
+		789175ED27500ABD00E86E26 /* LocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789175EB27500ABD00E86E26 /* LocationCollectionViewCell.xib */; };
+		789175F027501F8400E86E26 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175EF27501F8400E86E26 /* LocationModel.swift */; };
+		789175F32750216F00E86E26 /* UIColor + utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175F22750216F00E86E26 /* UIColor + utils.swift */; };
+		789175F527502BC200E86E26 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175F427502BC200E86E26 /* HeaderView.swift */; };
 		D55D04A1514A23B0DCD66ADC /* Pods_PhotoPlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195CE6F5B0A6E0E19BCB05E /* Pods_PhotoPlan.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,12 +30,19 @@
 		789175C5274FF34900E86E26 /* PhotoPlan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPlan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		789175C8274FF34900E86E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		789175CA274FF34900E86E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		789175CC274FF34900E86E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		789175CC274FF34900E86E26 /* LocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsVC.swift; sourceTree = "<group>"; };
 		789175CF274FF34900E86E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		789175D1274FF35100E86E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		789175D4274FF35100E86E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		789175D6274FF35100E86E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		789175DC274FF52500E86E26 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		789175E32750030700E86E26 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
+		789175E42750030700E86E26 /* LocationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsTableViewCell.xib; sourceTree = "<group>"; };
+		789175EA27500ABD00E86E26 /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		789175EB27500ABD00E86E26 /* LocationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCollectionViewCell.xib; sourceTree = "<group>"; };
+		789175EF27501F8400E86E26 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		789175F22750216F00E86E26 /* UIColor + utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + utils.swift"; sourceTree = "<group>"; };
+		789175F427502BC200E86E26 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E636FCF906623EB40A4ECE2D /* Pods-PhotoPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPlan.release.xcconfig"; path = "Target Support Files/Pods-PhotoPlan/Pods-PhotoPlan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,16 +79,95 @@
 		789175C7274FF34900E86E26 /* PhotoPlan */ = {
 			isa = PBXGroup;
 			children = (
-				789175C8274FF34900E86E26 /* AppDelegate.swift */,
-				789175CA274FF34900E86E26 /* SceneDelegate.swift */,
-				789175CC274FF34900E86E26 /* ViewController.swift */,
-				789175CE274FF34900E86E26 /* Main.storyboard */,
-				789175D1274FF35100E86E26 /* Assets.xcassets */,
+				789175DE2750025100E86E26 /* App */,
+				789175DF2750025F00E86E26 /* Resource */,
+				789175EE27501F6900E86E26 /* Models */,
+				789175E12750028100E86E26 /* Screens */,
+				789175F12750214D00E86E26 /* Extensions */,
 				789175D3274FF35100E86E26 /* LaunchScreen.storyboard */,
 				789175D6274FF35100E86E26 /* Info.plist */,
 				789175DC274FF52500E86E26 /* GoogleService-Info.plist */,
 			);
 			path = PhotoPlan;
+			sourceTree = "<group>";
+		};
+		789175DE2750025100E86E26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				789175C8274FF34900E86E26 /* AppDelegate.swift */,
+				789175CA274FF34900E86E26 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		789175DF2750025F00E86E26 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				789175D1274FF35100E86E26 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		789175E12750028100E86E26 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				789175E22750029500E86E26 /* LocationsVC */,
+				789175CE274FF34900E86E26 /* Main.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		789175E22750029500E86E26 /* LocationsVC */ = {
+			isa = PBXGroup;
+			children = (
+				789175E72750037800E86E26 /* Cells */,
+				789175CC274FF34900E86E26 /* LocationsVC.swift */,
+				789175F427502BC200E86E26 /* HeaderView.swift */,
+			);
+			path = LocationsVC;
+			sourceTree = "<group>";
+		};
+		789175E72750037800E86E26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				789175E82750037E00E86E26 /* TableViewCells */,
+				789175E927500A8F00E86E26 /* CollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		789175E82750037E00E86E26 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				789175E32750030700E86E26 /* LocationsTableViewCell.swift */,
+				789175E42750030700E86E26 /* LocationsTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		789175E927500A8F00E86E26 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				789175EA27500ABD00E86E26 /* LocationCollectionViewCell.swift */,
+				789175EB27500ABD00E86E26 /* LocationCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		789175EE27501F6900E86E26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				789175EF27501F8400E86E26 /* LocationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		789175F12750214D00E86E26 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				789175F22750216F00E86E26 /* UIColor + utils.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B11202CFCB9658A0F6A4574A /* Pods */ = {
@@ -83,7 +176,6 @@
 				179E8C3AC1BC55B17992DBC0 /* Pods-PhotoPlan.debug.xcconfig */,
 				E636FCF906623EB40A4ECE2D /* Pods-PhotoPlan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -157,7 +249,9 @@
 				789175D5274FF35100E86E26 /* LaunchScreen.storyboard in Resources */,
 				789175DD274FF52500E86E26 /* GoogleService-Info.plist in Resources */,
 				789175D2274FF35100E86E26 /* Assets.xcassets in Resources */,
+				789175ED27500ABD00E86E26 /* LocationCollectionViewCell.xib in Resources */,
 				789175D0274FF34900E86E26 /* Main.storyboard in Resources */,
+				789175E62750030700E86E26 /* LocationsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,9 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				789175CD274FF34900E86E26 /* ViewController.swift in Sources */,
+				789175CD274FF34900E86E26 /* LocationsVC.swift in Sources */,
 				789175C9274FF34900E86E26 /* AppDelegate.swift in Sources */,
+				789175EC27500ABD00E86E26 /* LocationCollectionViewCell.swift in Sources */,
+				789175F32750216F00E86E26 /* UIColor + utils.swift in Sources */,
+				789175E52750030700E86E26 /* LocationsTableViewCell.swift in Sources */,
+				789175F027501F8400E86E26 /* LocationModel.swift in Sources */,
 				789175CB274FF34900E86E26 /* SceneDelegate.swift in Sources */,
+				789175F527502BC200E86E26 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

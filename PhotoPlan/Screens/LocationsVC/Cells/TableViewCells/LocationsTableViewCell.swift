@@ -9,7 +9,7 @@ import UIKit
 import FirebaseStorage
 import Firebase
 
-final class LocationsTableViewCell: UITableViewCell {
+final class LocationsTableViewCell: UITableViewCell, ImageVCDelegate {
   
   @IBOutlet private weak var whiteView: UIView!
   @IBOutlet private weak var colorView: UIView!
@@ -17,7 +17,10 @@ final class LocationsTableViewCell: UITableViewCell {
   @IBOutlet private weak var nameTextField: UITextField!
   
   var viewModel: LocationsViewModelProtocol = LocationsViewModel(location: .init(image: [], imageUrl: []))
+  
+  var index = Int()
   var completion: ((UIImagePickerController) -> ())?
+  var imageCompletion: ((UIViewController) -> ())?
   
   private let imagePicker = UIImagePickerController()
   static let cellName = "LocationsTableViewCell"
@@ -26,12 +29,12 @@ final class LocationsTableViewCell: UITableViewCell {
     super.awakeFromNib()
     self.backgroundColor = UIColor.init(rgb: 0xFAFAFA)
     imagePicker.delegate = self
-    
     nameTextField.delegate = self
     setupCollectionView()
     setupView()
     bind()
   }
+  
   
   private func setupCollectionView(){
     collectionView.dataSource = self
@@ -67,6 +70,11 @@ final class LocationsTableViewCell: UITableViewCell {
     
   }
   
+  func setupImageView() -> UIImage {
+    guard let location = viewModel.location else { return UIImage() }
+    return location.image[index]
+  }
+  
 }
 
 extension LocationsTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -84,11 +92,17 @@ extension LocationsTableViewCell: UICollectionViewDelegate, UICollectionViewData
     
     guard let  location = viewModel.location else { return UICollectionViewCell()}
     
-    
-    cell.setupImage(image: location.image[indexPath.item] )
-    
+    cell.setupImage(image: location.image[indexPath.item])
     
     return cell
+  }
+  
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+  
+    let nextVC = ImageVC(nibName: "ImageVC", bundle: nil)
+    nextVC.delegate = self
+    index = indexPath.item
+    imageCompletion?(nextVC)
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

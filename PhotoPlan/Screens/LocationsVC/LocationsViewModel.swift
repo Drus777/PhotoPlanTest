@@ -144,7 +144,6 @@ final class LocationsViewModel: LocationsViewModelProtocol {
   }
   
   private func downloadImage(from url: URL) {
-      print("Download Started")
       getData(from: url) { data, response, error in
           guard let data = data, error == nil else { return }
         

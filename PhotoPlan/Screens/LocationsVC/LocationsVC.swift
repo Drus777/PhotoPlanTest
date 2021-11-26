@@ -34,7 +34,6 @@ final class LocationsVC: UIViewController {
 
 extension LocationsVC: UITableViewDelegate, UITableViewDataSource {
   
-  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 1
   }
@@ -43,6 +42,10 @@ extension LocationsVC: UITableViewDelegate, UITableViewDataSource {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationsTableViewCell.cellName) as? LocationsTableViewCell else {return UITableViewCell()}
     cell.completion = { imagePicker in
       self.navigationController?.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    cell.imageCompletion = { nextVC in
+      self.navigationController?.pushViewController(nextVC, animated: true)
     }
     return cell
   }

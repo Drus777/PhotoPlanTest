@@ -24,6 +24,8 @@
 		789175FE2750C63700E86E26 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789175FD2750C63700E86E26 /* Ubuntu-Regular.ttf */; };
 		789176012750C8F900E86E26 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175FF2750C76600E86E26 /* LocationsViewModel.swift */; };
 		789176022750CD8000E86E26 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175E32750030700E86E26 /* LocationsTableViewCell.swift */; };
+		7891760827511A5200E86E26 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7891760627511A5200E86E26 /* ImageVC.swift */; };
+		7891760927511A5200E86E26 /* ImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7891760727511A5200E86E26 /* ImageVC.xib */; };
 		D55D04A1514A23B0DCD66ADC /* Pods_PhotoPlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195CE6F5B0A6E0E19BCB05E /* Pods_PhotoPlan.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		789175FB2750C5FE00E86E26 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
 		789175FD2750C63700E86E26 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
 		789175FF2750C76600E86E26 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		7891760627511A5200E86E26 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
+		7891760727511A5200E86E26 /* ImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageVC.xib; sourceTree = "<group>"; };
 		E636FCF906623EB40A4ECE2D /* Pods-PhotoPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPlan.release.xcconfig"; path = "Target Support Files/Pods-PhotoPlan/Pods-PhotoPlan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				789175E22750029500E86E26 /* LocationsVC */,
+				7891760527511A2F00E86E26 /* ImageVC */,
 				789175CE274FF34900E86E26 /* Main.storyboard */,
 			);
 			path = Screens;
@@ -185,6 +190,15 @@
 				789175FD2750C63700E86E26 /* Ubuntu-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7891760527511A2F00E86E26 /* ImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				7891760627511A5200E86E26 /* ImageVC.swift */,
+				7891760727511A5200E86E26 /* ImageVC.xib */,
+			);
+			path = ImageVC;
 			sourceTree = "<group>";
 		};
 		B11202CFCB9658A0F6A4574A /* Pods */ = {
@@ -264,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				789175FE2750C63700E86E26 /* Ubuntu-Regular.ttf in Resources */,
+				7891760927511A5200E86E26 /* ImageVC.xib in Resources */,
 				789175D5274FF35100E86E26 /* LaunchScreen.storyboard in Resources */,
 				789175DD274FF52500E86E26 /* GoogleService-Info.plist in Resources */,
 				789175FC2750C5FE00E86E26 /* Oswald-Light.ttf in Resources */,
@@ -325,6 +340,7 @@
 			files = (
 				789175CD274FF34900E86E26 /* LocationsVC.swift in Sources */,
 				789175C9274FF34900E86E26 /* AppDelegate.swift in Sources */,
+				7891760827511A5200E86E26 /* ImageVC.swift in Sources */,
 				789175EC27500ABD00E86E26 /* LocationCollectionViewCell.swift in Sources */,
 				789176022750CD8000E86E26 /* LocationsTableViewCell.swift in Sources */,
 				789175F32750216F00E86E26 /* UIColor + utils.swift in Sources */,

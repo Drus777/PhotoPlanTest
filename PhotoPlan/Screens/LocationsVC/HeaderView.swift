@@ -30,7 +30,7 @@ final class HeaderView: UIView {
     label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     label.text = "ЛОКАЦИИ"
-    label.font = UIFont(name: "Apple SD Gothic Neo", size: 30)
+    label.font = UIFont(name: "Oswald-Light", size: 30)
   }
   
   required init?(coder: NSCoder) {

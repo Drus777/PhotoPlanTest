@@ -13,7 +13,7 @@ final class LocationsVC: UIViewController {
   @IBOutlet private weak var tableView: UITableView!
   
   private var headerView = HeaderView()
- 
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupTableView()
@@ -41,14 +41,15 @@ extension LocationsVC: UITableViewDelegate, UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationsTableViewCell.cellName) as? LocationsTableViewCell else {return UITableViewCell()}
-    
+    cell.completion = { imagePicker in
+      self.navigationController?.present(imagePicker, animated: true, completion: nil)
+    }
     return cell
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UIScreen.main.bounds.height / 2.8
   }
-
-  
 }
+
 

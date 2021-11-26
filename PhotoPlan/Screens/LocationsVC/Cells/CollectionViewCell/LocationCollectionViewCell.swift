@@ -11,15 +11,15 @@ final class LocationCollectionViewCell: UICollectionViewCell {
   
   static let cellName = "LocationCollectionViewCell"
   
-  @IBOutlet private weak var image: UIImageView!
+  @IBOutlet private weak var imageView: UIImageView!
   
   override func awakeFromNib() {
     super.awakeFromNib()
-    setupImage()
   }
   
-  func setupImage() {
-    image.layer.cornerRadius = 15
+  func setupImage(image: UIImage) {
+    imageView.layer.cornerRadius = 15
+    imageView.image = image
   }
   
 }

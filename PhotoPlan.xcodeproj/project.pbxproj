@@ -14,13 +14,16 @@
 		789175D2274FF35100E86E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 789175D1274FF35100E86E26 /* Assets.xcassets */; };
 		789175D5274FF35100E86E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 789175D3274FF35100E86E26 /* LaunchScreen.storyboard */; };
 		789175DD274FF52500E86E26 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 789175DC274FF52500E86E26 /* GoogleService-Info.plist */; };
-		789175E52750030700E86E26 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175E32750030700E86E26 /* LocationsTableViewCell.swift */; };
 		789175E62750030700E86E26 /* LocationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789175E42750030700E86E26 /* LocationsTableViewCell.xib */; };
 		789175EC27500ABD00E86E26 /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175EA27500ABD00E86E26 /* LocationCollectionViewCell.swift */; };
 		789175ED27500ABD00E86E26 /* LocationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789175EB27500ABD00E86E26 /* LocationCollectionViewCell.xib */; };
 		789175F027501F8400E86E26 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175EF27501F8400E86E26 /* LocationModel.swift */; };
 		789175F32750216F00E86E26 /* UIColor + utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175F22750216F00E86E26 /* UIColor + utils.swift */; };
 		789175F527502BC200E86E26 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175F427502BC200E86E26 /* HeaderView.swift */; };
+		789175FC2750C5FE00E86E26 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789175FB2750C5FE00E86E26 /* Oswald-Light.ttf */; };
+		789175FE2750C63700E86E26 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 789175FD2750C63700E86E26 /* Ubuntu-Regular.ttf */; };
+		789176012750C8F900E86E26 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175FF2750C76600E86E26 /* LocationsViewModel.swift */; };
+		789176022750CD8000E86E26 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789175E32750030700E86E26 /* LocationsTableViewCell.swift */; };
 		D55D04A1514A23B0DCD66ADC /* Pods_PhotoPlan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195CE6F5B0A6E0E19BCB05E /* Pods_PhotoPlan.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		789175EF27501F8400E86E26 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		789175F22750216F00E86E26 /* UIColor + utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + utils.swift"; sourceTree = "<group>"; };
 		789175F427502BC200E86E26 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		789175FB2750C5FE00E86E26 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		789175FD2750C63700E86E26 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		789175FF2750C76600E86E26 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		E636FCF906623EB40A4ECE2D /* Pods-PhotoPlan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoPlan.release.xcconfig"; path = "Target Support Files/Pods-PhotoPlan/Pods-PhotoPlan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +109,7 @@
 		789175DF2750025F00E86E26 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				789175F62750C34800E86E26 /* Fonts */,
 				789175D1274FF35100E86E26 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -122,6 +129,7 @@
 			children = (
 				789175E72750037800E86E26 /* Cells */,
 				789175CC274FF34900E86E26 /* LocationsVC.swift */,
+				789175FF2750C76600E86E26 /* LocationsViewModel.swift */,
 				789175F427502BC200E86E26 /* HeaderView.swift */,
 			);
 			path = LocationsVC;
@@ -168,6 +176,15 @@
 				789175F22750216F00E86E26 /* UIColor + utils.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		789175F62750C34800E86E26 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				789175FB2750C5FE00E86E26 /* Oswald-Light.ttf */,
+				789175FD2750C63700E86E26 /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B11202CFCB9658A0F6A4574A /* Pods */ = {
@@ -246,8 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				789175FE2750C63700E86E26 /* Ubuntu-Regular.ttf in Resources */,
 				789175D5274FF35100E86E26 /* LaunchScreen.storyboard in Resources */,
 				789175DD274FF52500E86E26 /* GoogleService-Info.plist in Resources */,
+				789175FC2750C5FE00E86E26 /* Oswald-Light.ttf in Resources */,
 				789175D2274FF35100E86E26 /* Assets.xcassets in Resources */,
 				789175ED27500ABD00E86E26 /* LocationCollectionViewCell.xib in Resources */,
 				789175D0274FF34900E86E26 /* Main.storyboard in Resources */,
@@ -307,8 +326,9 @@
 				789175CD274FF34900E86E26 /* LocationsVC.swift in Sources */,
 				789175C9274FF34900E86E26 /* AppDelegate.swift in Sources */,
 				789175EC27500ABD00E86E26 /* LocationCollectionViewCell.swift in Sources */,
+				789176022750CD8000E86E26 /* LocationsTableViewCell.swift in Sources */,
 				789175F32750216F00E86E26 /* UIColor + utils.swift in Sources */,
-				789175E52750030700E86E26 /* LocationsTableViewCell.swift in Sources */,
+				789176012750C8F900E86E26 /* LocationsViewModel.swift in Sources */,
 				789175F027501F8400E86E26 /* LocationModel.swift in Sources */,
 				789175CB274FF34900E86E26 /* SceneDelegate.swift in Sources */,
 				789175F527502BC200E86E26 /* HeaderView.swift in Sources */,

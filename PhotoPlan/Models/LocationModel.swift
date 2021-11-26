@@ -8,5 +8,6 @@
 import UIKit
 
 struct LocationModel {
-  var image: UIImage
+  var image: [UIImage]
+  var imageUrl: [String]
 }
